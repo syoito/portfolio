@@ -17,7 +17,7 @@ a{
 	display:flex;
 	justify-content:center;
 }
-header > h1{
+header h1{
 	margin:0;
 	padding-left:20px;
 	font-weight:normal;
@@ -116,10 +116,19 @@ small{
   margin: 40px auto 40px auto;
   width: 90%;
 }
-@media(min-width:0) and (max-width:850px){
-	.flex{
-		flex-direction:column;
+
+@media(min-width:0) and (max-width:769px){
+	header{
+		height:120px;
+	}
+	header h1{
+		font-size:30px;
+	}
+	header p{
+		font-size:30px;
+	}
+	.text{
+		font-size:20px;
 	}
 }
-
 
