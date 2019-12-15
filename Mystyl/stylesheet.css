@@ -38,6 +38,7 @@ main > h1{
 .text{
 	text-align:left;
 	display:inline-block;
+	width:60%;
 }
 
 /*フッター*/
