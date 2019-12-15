@@ -11,5 +11,114 @@ a{
 .container{
   width:100%;
   padding:0 15px;
-  margin:0 auto;
+  text-align:center;
 }
+.flex{
+	display:flex;
+	justify-content:center;
+}
+header > h1{
+	margin:0;
+	padding-left:20px;
+	font-weight:normal;
+	font-size:20px;
+}
+header{
+	background-color:#ffbf80;
+	color:#fff;
+	text-align:center;
+}
+header p{
+	font-size:16px;
+	padding-left:20px;
+}
+main > h1{
+	font-size:20px;
+}
+.text{
+	text-align:left;
+	display:inline-block;
+}
+
+/*フッター*/
+footer{
+	height:100px;
+	background-color:#6a5acd15;
+	margin-top:20px;
+	text-align:center;
+}
+small{
+	line-height:100px;
+	color:darkgray;
+}
+
+/* ポップアップウインドウの設定 */
+.popup {
+  background-color: #efefef;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, .8);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 70vw;
+  height: 55vw;
+  overflow-y: scroll;
+}
+/* チェックボックスの初期設定 */
+#popup-on{
+  display: none;
+}
+/* チェックされたらポップアップウインドウを開く */
+#popup-on:checked + .popup{
+  display: block;
+}
+
+/* 閉じるアイコン（右上） */
+.icon-close{
+  background: #000;
+  color: #fff;
+  font-size: 30px;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+}
+
+/* 閉じるボタン */
+.btn-close{
+  background: #000;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px auto;
+  width: 95%;
+  text-align: center;
+}
+
+/* 開くボタン */
+.btn-open{
+  background: #fff;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px auto;
+  width: 95%;
+  text-align: center;
+}
+
+/* ポップアップの内容 */
+.popup-content{
+  margin: 40px auto 40px auto;
+  width: 90%;
+}
+@media(min-width:0) and (max-width:850px){
+	.flex{
+		flex-direction:column;
+	}
+}
+
+
