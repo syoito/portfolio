@@ -117,18 +117,14 @@ small{
   width: 90%;
 }
 
-@media(min-width:0) and (max-width:769px){
-	header{
-		height:120px;
-	}
-	header h1{
-		font-size:30px;
-	}
-	header p{
-		font-size:30px;
-	}
-	.text{
-		font-size:20px;
+#aku{
+	width:400px;
+	height:300px;
+}
+@media(min-width:0) and (max-width:400px){
+	#aku{
+		width:350px;
+		height:250px;
 	}
 }
 
