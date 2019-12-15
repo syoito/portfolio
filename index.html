@@ -3,46 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="Mystyl/stylesheet.css">
-  <title>MyPortFolio</title>
+  <meta name="viewport" content="width=device-widht,inital-scale=1">
+  <title>myPortFolio</title>
 </head>
 <body>
+  <header>
+        <h1>my portfolio</h1>
+        <p>私が作ったアプリの紹介ページです。</p>
+      </header>
   <div class="container">
     <main>
-        <h1>My portfolio</h1>
-        <h2>作品紹介</h2>
+      <h1>作品紹介</h2>
       <section>
         <!-- 一個目 -->
-        <h3>①行政書士一問一答！（Webアプリ）</h2>
-        <a href="http://studylaw.click/" target="_blank">サイトを表示する</a>
-        <br clear="left">
-        <img src="image/low1.png" alt="マルバツを選ぶ" width="400px" height="300px">
-        <img src="image/low2.png" alt="解答表示" width="400px" height="300px">
+        <h1>①行政書士一問一答！（Webアプリ）</h1>
+        
+
+<!-- ポップアップ画像 -->
+<div class="flex">
+<div class="pop-box">
+  <label for="popup-on"><label for="popup-on"><div class="btn-open"><img src="image/low1.png" alt="" class="layer-img" width="400px" height="300px"></div></label>
+  <input type="checkbox" id="popup-on">
+  <div class="popup">
+    <label for="popup-on" class="icon-close">×</label>
+    <div class="popup-content">
+      <img src="image/low1.png" alt="" class="layer-img">
+        <!-- ポップアップの中身　ここまで -->
+    </div>
+    <label for="popup-on"><div class="btn-close">閉じる</div></label>
+  </div>
+</div>
+<!-- ポップアップ画像2 -->
+<div class="pop-box">
+  <label for="popup-on"><label for="popup-on"><div class="btn-open"><img src="image/low2.png" alt="" class="layer-img" width="400px" height="300px"></div></label>
+  <input type="checkbox" id="popup-on">
+  <div class="popup">
+    <label for="popup-on" class="icon-close">×</label>
+    <div class="popup-content">
+      <img src="image/low2.png" alt="" class="layer-img">
+        <!-- ポップアップの中身　ここまで -->
+    </div>
+    <label for="popup-on"><div class="btn-close">閉じる</div></label>
+  </div>
+</div>
+</div>   
+      <div class="text">  
         <p>【説明】行政書士受験生のために作ったWeb問題集です。一問一答形式で○✗で解答し、答えと解説が表示されます。
         </p>
         <p>【製作期間】1週間</p>
         <p>【開発言語】HTML/CSS/JavaScript/jQuery</p>
+      </div> 
+      <br>
+      <a href="http://studylaw.click/" target="_blank">サイトを表示する</a>
       </section>
       <section> 
         <!-- 二個目 -->
-        <h2>②Box&Ball（スマホゲームアプリ）</h2>
+        <h1>②Box&Ball（スマホゲームアプリ）</h1>
         <img src="image/boxball.png" alt="ボールゲーム">
         <br clear="left">
-        <a href="https://apps.apple.com/jp/app/box-ball/id1455608250?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2019-03-11&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;"></a>
+        
+      <div class="text">
         <p>【説明】重力に従い落ちてくるボールを箱に入れたらクリアするゲームです。App Storeで配信しています。</p>
         <p>【製作期間】１ヶ月</p>
         <p>【開発言語/ツール】C#/Unity</p>
+        </div> 
+        <br>
+        <a href="https://apps.apple.com/jp/app/box-ball/id1455608250?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2019-03-11&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;"></a>
+
       </section> 
       <section>
         <!-- ３つ目 -->
-        <h2>③走れ！悪夢ちゃん（スマホゲームアプリ）</h2>
+        <h1>③走れ！悪夢ちゃん（スマホゲームアプリ）</h1>
         <img src="image/akumu.png" alt="2D横スクロール" width="400px" height="300px">
         <br clear="left">
-        <a href="https://apps.apple.com/jp/app/%E8%B5%B0%E3%82%8C-%E6%82%AA%E5%A4%A2%E3%81%A1%E3%82%83%E3%82%93/id1458274048?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2019-04-07&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;"></a>
+       
+      <div class="text">
         <p>【説明】2D横スクロールアクションゲームです。App Storeで配信しています。</p>
         <p>【製作期間】１週間</p>
         <p>【開発言語/ツール】C#/Unity</p>
+      </div>
+        <br>
+       <a href="https://apps.apple.com/jp/app/%E8%B5%B0%E3%82%8C-%E6%82%AA%E5%A4%A2%E3%81%A1%E3%82%83%E3%82%93/id1458274048?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2019-04-07&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;"></a>
+
       </section>
     </main>
-  </div>
+    </div>
+    <footer>
+      <small>&copy;SYO ITO</small>
+    </footer>
+  
 </body>
 </html>
